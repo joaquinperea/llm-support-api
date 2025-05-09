@@ -7,3 +7,5 @@ aiofiles
 python-dotenv
 asyncpg
 databases
+python-jose[cryptography]
+passlib[bcrypt]
