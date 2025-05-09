@@ -21,7 +21,8 @@ POST /ask
 Content-Type: application/json
 
 {
-  "message": "What is the capital of France?"
+  "message": "What is the capital of France?",
+  "model": "gpt-3.5-turbo"  # Optional
 }
 ``````
 
