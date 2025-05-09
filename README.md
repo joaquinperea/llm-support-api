@@ -32,7 +32,7 @@ Content-Type: application/json
 }
 ``````
 
-## Setup
+## 🛠️ Setup
 1. Clone the repository:
 ```
 git clone https://github.com/your-username/simple-gpt-api.git
@@ -57,7 +57,7 @@ uvicorn app.main:app --reload
 http://localhost:8000/docs
 ```
 
-## Project Structure
+## 🔍 Project Structure
 ```
 .
 ├── app
