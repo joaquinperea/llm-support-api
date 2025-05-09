@@ -7,13 +7,13 @@ from openai import AsyncOpenAI
 load_dotenv()
 client = AsyncOpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-async def ask_gpt(prompt: str) -> str:
+async def ask_gpt(prompt: str, model: str = "gpt-3.5-turbo") -> str:
     """
     Asynchronously ask a question to the GPT model and return the response.
     """
     # Call the OpenAI API with the provided prompt:
     response = await client.chat.completions.create(
-        model="gpt-3.5-turbo",  # o "gpt-4"
+        model=model,
         messages=[{"role": "user", "content": prompt}]
     )
     # Return the response text from the API response:
