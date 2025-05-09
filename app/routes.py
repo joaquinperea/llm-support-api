@@ -1,9 +1,10 @@
+import logging
 from fastapi import APIRouter, HTTPException
-from app.main import logger
 from app.schemas import MessageRequest, MessageResponse
 from app.services import ask_gpt
 
 router = APIRouter()
+logger = logging.getLogger(__name__)
 
 @router.post("/ask", response_model=MessageResponse)
 async def ask_endpoint(payload: MessageRequest):

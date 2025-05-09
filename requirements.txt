@@ -5,3 +5,5 @@ pydantic
 openai
 aiofiles
 python-dotenv
+asyncpg
+databases
